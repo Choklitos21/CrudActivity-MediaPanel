@@ -9,34 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
-    <style>
-        html {
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        table,
-        td,
-        th {
-            table-layout: fixed;
-            border-collapse: collapse;
-            border: 3px solid purple;
-            width: 50%;
-        }
-
-        td,
-        th {
-            padding: 10px;
-            text-align: left;
-        }
-
-        footer {
-            display: flex;
-            flex-direction: row;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <header>
@@ -60,78 +33,113 @@
         <section>
             <h2>Create task</h2>
 
-        </section>
+            <form>
+                <div>
+                    <label for="task">Type of task:</label>
+                    <input type="text"
+                           id="task"
+                           name="task"
+                           placeholder="Important, regular, not important...">
+                </div>
 
-        <section>
-            <h2>List tasks</h2>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea name="description"
+                              id="description"
+                              cols="30" rows="10"
+                              placeholder="Describe what this task is about..."></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
 
         </section>
 
         <article>
-                <h3>Types of tasks</h3>
-            <ul>
-                <li>
 
-                </li>
+            <table>
+                <tr>
+                    <th>Type of Task</th>
+                    <th>Description</th>
+                    <th>Option</th>
+                </tr>
+                <tr>
+                    <td>Important</td>
+                    <td>Finish all activities on Moodle</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Regular</td>
+                    <td>Make connections</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Not important</td>
+                    <td>Try to sleep 8 hours</td>
+                    <td>
+                        <button>Update</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+
+        </article>
+
+        <article>
+            <h3>Types of tasks</h3>
+            <ul>
+                <li>Important</li>
+                <li>Regular</li>
+                <li>Not important</li>
             </ul>
 
-                <h3>Steps to register a task</h3>
+            <h3>Steps to register a task</h3>
             <ol>
-                <li>
-
-                </li>
+                <li>Put the type of task</li>
+                <li>Fill the description</li>
+                <li>Click the "submit" button</li>
             </ol>
 
         </article>
         
-        <article>
-            
-            <table>
-                <tr>
-                    <th>Task</th>
-                    <th>Data</th>
-                    <th>Function</th>
-                </tr>
-                <tr>
-                    <td>first row</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>second row</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>third row</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-            
-        </article>
+
 
         <aside>
             <h3>Curiosities</h3>
+            <p>This <em>webpage</em> was made using all info explained <strong>HERE</strong></p>
         </aside>
 
         <section>
             <h2>Multimedia</h2>
+            <div>
+                <div>
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="media/sounds/better%20now.mp3" type="audio/mpeg">
 
-            <h3>Audio</h3>
-            <audio controls>
-                <source src="media/sounds/better%20now.mp3" type="audio/mpeg">
+                        We are sorry, your browser do not support this audio tag.
+                    </audio>
+                </div>
 
-                We are sorry, your browser do not support this audio tag.
-            </audio>
+                <div>
+                    <h3>Video</h3>
+                    <video controls poster="media/images/pandaImage.png" width="440" height="160">
+                        <source src="media/videos/panda.mp4" type="video/mp4">
 
-            <h3>Video</h3>
-            <video controls poster="media/images/pandaImage.png" width="440" height="160">
-                <source src="media/videos/panda.mp4" type="video/mp4">
+                        We are sorry, your browser do not support this video tag.
+                    </video>
+                </div>
+            </div>
 
-                We are sorry, your browser do not support this video tag.
-            </video>
         </section>
+
+
     </main>
 
     <footer>
