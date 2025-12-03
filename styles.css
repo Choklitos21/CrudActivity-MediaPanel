@@ -8,10 +8,8 @@ html {
     font-style: normal;
     height: 100vh;
     background-color: rgba(175, 32, 175, 0.9);
-    /*background-color: #e5e5f7;*/
-    /*opacity: 0.8;*/
-    /*background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;*/
-    /*background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;*/
+
+    scroll-behavior: smooth;
 }
 
 body,
@@ -90,9 +88,14 @@ article table {
 }
 
 form {
-    width: 300px;
+    width: 60%;
     display: flex;
     flex-direction: column;
+}
+
+form div:last-child input {
+    color: white;
+    background-color: rgba(175, 32, 175, 0.9);
 }
 
 form div {
@@ -135,6 +138,12 @@ aside h3 {
     margin: 0;
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main section:last-child {
     width: 100%;
     display: flex;
@@ -160,6 +169,10 @@ main section:last-child div div {
 main section:last-child h3 {
     border-bottom: 1px solid purple;
     width: 90%;
+}
+
+table tr td:last-child {
+    text-align: center;
 }
 
 

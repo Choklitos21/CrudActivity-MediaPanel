@@ -11,21 +11,22 @@
 
     <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
     <header>
         <h1>CrudActivity MediaPanel</h1>
 
-        <p>Static <strong><abbr title="HyperText Markup Language">HTML</abbr></strong>page that simulates the panel of a
+        <p>Static <strong><abbr title="HyperText Markup Language">HTML</abbr></strong> page that simulates the panel of a
             <strong><abbr title="Create, Read, Update, and Delete">CRUD</abbr></strong> task system,
             using basic, semantic, non-semantic, some uncommon, and multimedia <strong>TAGS</strong>.</p>
     </header>
 
 <!--    Crear, Listado, Multimedia, Acerca de-->
     <nav>
-        <a href="">Create</a>
-        <a href="">List</a>
-        <a href="">Multimedia</a>
-        <a href="">About</a>
+        <a href="#create">Create</a>
+        <a href="#list">List</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#about">About</a>
         <a href="https://pointerpointer.com/">External page</a>
     </nav>
 
@@ -35,7 +36,7 @@
 
             <form>
                 <div>
-                    <label for="task">Type of task:</label>
+                    <label id="create" for="task">Type of task:</label>
                     <input type="text"
                            id="task"
                            name="task"
@@ -57,7 +58,7 @@
 
         <article>
 
-            <table>
+            <table id="list" >
                 <tr>
                     <th>Type of Task</th>
                     <th>Description</th>
@@ -67,24 +68,24 @@
                     <td>Important</td>
                     <td>Finish all activities on Moodle</td>
                     <td>
-                        <button>Update</button>
-                        <button>Delete</button>
+                        <button type="button">Update</button>
+                        <button type="button">Delete</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Regular</td>
                     <td>Make connections</td>
                     <td>
-                        <button>Update</button>
-                        <button>Delete</button>
+                        <button type="button">Update</button>
+                        <button type="button">Delete</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Not important</td>
                     <td>Try to sleep 8 hours</td>
                     <td>
-                        <button>Update</button>
-                        <button>Delete</button>
+                        <button type="button">Update</button>
+                        <button type="button">Delete</button>
                     </td>
                 </tr>
             </table>
@@ -115,7 +116,7 @@
             <p>This <em>webpage</em> was made using all info explained <strong>HERE</strong></p>
         </aside>
 
-        <section>
+        <section id="multimedia">
             <h2>Multimedia</h2>
             <div>
                 <div>
@@ -129,7 +130,7 @@
 
                 <div>
                     <h3>Video</h3>
-                    <video controls poster="media/images/pandaImage.png" width="440" height="160">
+                    <video controls poster="media/images/pandaImage.png" width="70%" height="50%">
                         <source src="media/videos/panda.mp4" type="video/mp4">
 
                         We are sorry, your browser do not support this video tag.
@@ -142,7 +143,7 @@
 
     </main>
 
-    <footer>
+    <footer id="about">
         <address>
             You can contact author at
             <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br/>
